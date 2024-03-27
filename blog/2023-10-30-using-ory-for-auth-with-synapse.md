@@ -40,7 +40,10 @@ This post is my effort to lay out my understanding of the options that Synapse o
 - [Matrix OpenID Connect Playground repo](https://github.com/vector-im/oidc-playground)
     - this is hosted somewhere
     - not sure how it is useful to me
-- []
+- [Blog post about manually integrating Kratos and Hydra (and why)](https://blog.px.dev/open-source-auth/)
+- [Kratos issue comment that appears to be the most complete integration guide?](https://github.com/ory/kratos/issues/273#issuecomment-1305388654)
+- [Kratos/Hydra critique](https://gruchalski.com/posts/2021-04-10-ory-reference-docker-compose-and-thoughts-on-the-platform/)
+
 
 ## Hosting My Own Hydra OIDC Provider and Using Already Built-in OIDC to Authenticate All users
 It seems that while the proposal to have all matrix clients authenticate with matrix via OIDC, it is still just a proposal and is currently experimental. I feel that I now understand how I can have users that are managed by Ory Hydra/Kratos but have accounts on my Matrix server.
@@ -67,3 +70,5 @@ It seems that while the proposal to have all matrix clients authenticate with ma
 - less secure?
     - another auth rewrite from a team that should be focussing on chat?
     - they are very security focussed though...
+- looks like I'm going with this because the Kratos/Hydra integration is not looking straightforward enough at this time
+    - in the future that does seem like the best option
