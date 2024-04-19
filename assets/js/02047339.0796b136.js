@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquiri_docs=self.webpackChunkquiri_docs||[]).push([[9386],{6306:function(s){s.exports=JSON.parse('{"label":"hola","permalink":"/quiri-docs/blog/tags/hola","allTagsPath":"/quiri-docs/blog/tags","count":1}')}}]);

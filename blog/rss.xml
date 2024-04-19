@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Quiri Docs and Blog Blog</title>
-        <link>https://your-docusaurus-test-site.com/blog</link>
+        <link>https://quiri-io.github.io/quiri-docs/blog</link>
         <description>Quiri Docs and Blog Blog</description>
         <lastBuildDate>Mon, 29 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[Registering New Users with Matrix]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/registering-new-users</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/registering-new-users</link>
             <guid>registering-new-users</guid>
             <pubDate>Mon, 29 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[For Quiri, we want to register users with a username and an email. Luckily, we can reference how Fluffychat does this!]]></description>
@@ -20,7 +20,7 @@ Adding <code>enable_registration: true</code> will get you a startup error telli
         </item>
         <item>
             <title><![CDATA[Using Ory for Auth with Synapse]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/using-ory-for-auth-with-synapse</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/using-ory-for-auth-with-synapse</link>
             <guid>using-ory-for-auth-with-synapse</guid>
             <pubDate>Mon, 30 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[We are now working on the designs for the MVP app which has me figuring out user signup/signin. While the matrix folks have built-in a variety of authentication methods, I am inclined to use a dedicated signup/signin service and let matrix focus on chat.]]></description>
@@ -29,7 +29,7 @@ Adding <code>enable_registration: true</code> will get you a startup error telli
         </item>
         <item>
             <title><![CDATA[Project Structure and State Management in Flutter]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/project-structure-and-state-management-in-flutter</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/project-structure-and-state-management-in-flutter</link>
             <guid>project-structure-and-state-management-in-flutter</guid>
             <pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Flutter is a compelling technology but it is not very mature so there are some challenges when it comes to filling in the functionality that is missing from the core libraries. I have spent a lot of time reading different blogs, etc. to try to get some guidance and hopefully avoid some common pitfalls. One resource that has been useful is codewithandrea.com. I am going to be referencing his riverpod and other architecture articles to inform my library architectural decisions.]]></description>
@@ -38,7 +38,7 @@ Adding <code>enable_registration: true</code> will get you a startup error telli
         </item>
         <item>
             <title><![CDATA[Getting Started With the Matrix API]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/getting-started-matrix-api</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/getting-started-matrix-api</link>
             <guid>getting-started-matrix-api</guid>
             <pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[After some exploration of Android development (specifically jetpack compose), I finally took a proper swing at Flutter and while jetpack compose seems like a powerful tool and I would love to get to know kotlin better, the cross-platform development and cross-platform design was just too alluring.]]></description>
@@ -47,7 +47,7 @@ Adding <code>enable_registration: true</code> will get you a startup error telli
         </item>
         <item>
             <title><![CDATA[Getting Started With Flutter]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/getting-started-with-flutter</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/getting-started-with-flutter</link>
             <guid>getting-started-with-flutter</guid>
             <pubDate>Sun, 12 Jun 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[After putting quite a bit of time into getting Element for Android working as a library so that I could wrap it in my own package, I was finding that even writing a simple feature was proving difficult. I did some evaluation of the amount of energy that would be required to get up to speed with android in a way that would be required for me to make any meaningful progress on quiri and Flutter started to look more attractive.]]></description>
@@ -56,18 +56,18 @@ Adding <code>enable_registration: true</code> will get you a startup error telli
         </item>
         <item>
             <title><![CDATA[Welcome]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/welcome</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/welcome</link>
             <guid>welcome</guid>
             <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p><p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><ul><li><code>2019-05-30-welcome.md</code></li><li><code>2019-05-30-welcome/index.md</code></li></ul><p>A blog post folder can be convenient to co-locate blog post images:</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p><p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><ul><li><code>2019-05-30-welcome.md</code></li><li><code>2019-05-30-welcome/index.md</code></li></ul><p>A blog post folder can be convenient to co-locate blog post images:</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/quiri-docs/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
             <category>facebook</category>
             <category>hello</category>
             <category>docusaurus</category>
         </item>
         <item>
             <title><![CDATA[MDX Blog Post]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/mdx-blog-post</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/mdx-blog-post</link>
             <guid>mdx-blog-post</guid>
             <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
@@ -76,7 +76,7 @@ Adding <code>enable_registration: true</code> will get you a startup error telli
         </item>
         <item>
             <title><![CDATA[Long Blog Post]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/long-blog-post</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/long-blog-post</link>
             <guid>long-blog-post</guid>
             <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[This is the summary of a very long blog post,]]></description>
@@ -86,7 +86,7 @@ Adding <code>enable_registration: true</code> will get you a startup error telli
         </item>
         <item>
             <title><![CDATA[First Blog Post]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/first-blog-post</link>
+            <link>https://quiri-io.github.io/quiri-docs/blog/first-blog-post</link>
             <guid>first-blog-post</guid>
             <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>

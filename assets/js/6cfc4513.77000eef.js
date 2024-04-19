@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquiri_docs=self.webpackChunkquiri_docs||[]).push([[496],{8811:function(s){s.exports=JSON.parse('{"label":"guides","permalink":"/blog/tags/guides","allTagsPath":"/blog/tags","count":5}')}}]);
