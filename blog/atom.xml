@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://quiri-io.github.io/quiri-docs/blog</id>
     <title>Quiri Docs and Blog Blog</title>
-    <updated>2024-01-29T00:00:00.000Z</updated>
+    <updated>2024-05-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://quiri-io.github.io/quiri-docs/blog"/>
     <subtitle>Quiri Docs and Blog Blog</subtitle>
     <icon>https://quiri-io.github.io/quiri-docs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Starting and Restarting Sessions]]></title>
+        <id>starting-and-restarting-sessions</id>
+        <link href="https://quiri-io.github.io/quiri-docs/blog/starting-and-restarting-sessions"/>
+        <updated>2024-05-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Matrix SDK Sessions]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="matrix-sdk-sessions">Matrix SDK Sessions<a class="hash-link" href="#matrix-sdk-sessions" title="Direct link to heading">​</a></h2><p>Matrix uses access tokens to authenticate user requests. The Flutter SDK handles a lot of the token management for us.</p><p>For example, when setting the user's display name, there is no way to pass the auth token. This is because it is stored in a class variable and included in the request on our behalf.</p><p>But what happens to the access token when we shut down the app? The instance of the SDK class will be disposed and the token will go with it. This is why the Matrix Client can be provided a databaseBuilder when being created. The SDK will store the access token, amongst other things in this database and <a href="https://github.com/famedly/matrix-dart-sdk/blob/544888fe33a14e0610b2916b5069656a06aeb299/lib/src/client.dart#L1430-L1459" target="_blank" rel="noopener noreferrer">fetch them on startup</a>. This is what will allow us to keep users logged in even when the restart the app.</p><p>There remains the question of how long a client can stay logged in. It seems that the default for FluffyChat is to have long-lived access tokens. But the matrix spec allows for the use of refresh tokens for improved security.There exists a method <a href="https://github.com/famedly/matrix-dart-sdk/blob/501c457ea130481ba5b52d45d4d0ff37b8707964/lib/src/client.dart#L241-L279" target="_blank" rel="noopener noreferrer"><code>refreshAccessToken()</code> that refreshes the access token</a> but it appears that FluffyChat doesn't use it... Looks like I'll need to schedule a task to refresh the token. </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-session-data">Other session data<a class="hash-link" href="#other-session-data" title="Direct link to heading">​</a></h2><p>While the matrix SDK has it's own ways to persist session data, there are also cases in which we will want to persist session data (e.g. the user's sign-up stage). For these non-matrix session data, we will use the <a href="https://pub.dev/packages/hydrated_bloc" target="_blank" rel="noopener noreferrer">Hydrated Bloc package</a> to securely persist the session data.</p>]]></content>
+        <author>
+            <name>Nigel Maynard</name>
+            <uri>https://github.com/nigel-smk</uri>
+        </author>
+        <category label="guides" term="guides"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Registering New Users with Matrix]]></title>
         <id>registering-new-users</id>
