@@ -7,9 +7,12 @@ I used Google Domains to set up the matrix.quiri.io and element.quiri.io domains
 https://www.youtube.com/watch?v=YfAcvLuFMZI
 As per [the DNS Setup instructions](https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-dns.md) from the ansible script
 
+The base domain is pointing to the vercel-hosted landing page. [We need to set up vercel to serve the `.wellknown` files.](https://github.com/quiri-io/matrix-docker-ansible-deploy/blob/master/docs/configuring-playbook-base-domain-serving.md#serving-a-more-complicated-website-at-the-base-domain)
+
 # [Configuring the Ansible Playbook](https://github.com/quiri-io/matrix-docker-ansible-deploy/blob/master/docs/configuring-playbook.md#configuring-the-ansible-playbook)
 - the `vars.yml` is in bitwarden under `ansible vars.yml`
 - the `hosts` file is in bitwarden under `ansible hosts file`
+    - set `ansible_host` to the IP of the DigitalOcean droplet
 
 # [Setting up Droplet to be sshed into using SSH Key](https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/)
 Needed to set up the [droplet with the key ahead of time](https://docs.digitalocean.com/products/droplets/how-to/add-ssh-keys/to-account/)
@@ -38,7 +41,7 @@ And create other users there
         - I may have to upgrade the postgres database as well because it was a major version bump...
 
 
-# Deploying a custom docker image
+# Notes on potentially deploying a custom docker image in the future
 - We are developing on top of synapse and thus need to be deploying our version of synapse rather than the one distributed on dockerhub
 - Since we are using DigitalOcean for the server right now, we will also use [the digital ocean private container registry](https://www.digitalocean.com/products/container-registry)
 - New images are pushed to [the registry from local](https://docs.digitalocean.com/products/container-registry/how-to/use-registry-docker-kubernetes/)
