@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquiri_docs=self.webpackChunkquiri_docs||[]).push([[555],{3898:function(s){s.exports=JSON.parse('{"label":"guides","permalink":"/quiri-docs/blog/tags/guides","allTagsPath":"/quiri-docs/blog/tags","count":7}')}}]);
