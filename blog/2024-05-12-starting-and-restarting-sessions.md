@@ -7,7 +7,7 @@ tags: [guides]
 
 ## Matrix SDK Sessions
 
-Matrix uses access tokens to authenticate user requests. The Flutter SDK handles a lot of the token management for us.
+Matrix uses access tokens to authenticate user requests. The Dart SDK handles a lot of the token management for us.
 
 For example, when setting the user's display name, there is no way to pass the auth token. This is because it is stored in a class variable and included in the request on our behalf.
 

@@ -1,9 +1,4 @@
----
-slug: getting-started-matrix-api
-title: Getting Started With the Matrix API
-authors: [nigel]
-tags: [guides]
----
+# Getting Started With the Matrix API
 
 After some exploration of Android development (specifically jetpack compose), I finally took a proper swing at Flutter and while jetpack compose seems like a powerful tool and I would love to get to know kotlin better, the cross-platform development and cross-platform design was just too alluring. 
 

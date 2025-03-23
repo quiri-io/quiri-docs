@@ -1,3 +1,10 @@
+---
+slug: whitelabelling-element-android
+title: Whitelabelling Element Android
+authors: [nigel]
+tags: [guides]
+---
+
 # Whitelabelling Element Android
 
 # To fork or not to fork?
